@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		title=title
+		link(rel='stylesheet', href='/bootstrap.min.css')
+		link(rel='stylesheet', href='/style.css')
+		base(href="/")
+	body
+		nav.navbar.navbar-inverse.navbar-fixed-top
+			.container
+				#navbar.collapse.navbar-collapse
+					ul.nav.navbar-nav
+						li.active
+							a(href='/') Домой
+						li
+							a(href='/api/courses') Курсы
+		.container
+			.main-content
+				block content
